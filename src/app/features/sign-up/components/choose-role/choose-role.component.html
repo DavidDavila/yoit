@@ -1,0 +1,47 @@
+<section>
+  <header>
+    <a>¿Ya tienes una cuenta?<b> Ingresa aquí</b></a>
+  </header>
+  <article>
+    <h2>Regístrate en Yoit</h2>
+    <p>Empecemos por el principio. ¿Qué tipo de cuenta necesitas?</p>
+    <ul class="card_container">
+      <li>
+        <a [routerLink]="['student']">
+          <span class="icon">
+            <i class="fa-solid fa-user"></i>
+          </span>
+          <div>
+            <h3>Soy estudiante</h3>
+            <p>
+              Cuenta personal para acceder y visualizar todas tus clases
+            </p>
+
+          </div>
+          <span class="go">
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['teacher']">
+          <span class="icon">
+            <i class="fa-solid fa-person-chalkboard"></i>
+          </span>
+          <div>
+            <h3>Soy profesor</h3>
+            <p>
+              Cuenta profesional para hacer un seguimiento de tus alumnos
+            </p>
+          </div>
+          <span class="go">
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+
+        </a>
+      </li>
+    </ul>
+  </article>
+
+</section>

@@ -1,0 +1,16 @@
+<app-google-button (onClick)="onGoogleButtonClicked()"></app-google-button>
+<span class="separator">o</span>
+<form>
+  <!-- <label for="name">Nombre completo</label>
+      <input type="text" name="name" placeholder="¿Cómo te llamas?">-->
+  <label for="email">Correo electrónico</label>
+  <input type="email" name="email" placeholder="Necesitamos un correo electrónico">
+  <label for="password">Contraseña</label>
+  <input type="password" name="password" placeholder="Escribe tu contraseña">
+  <input type="checkbox" name="terms" (click)="terms = !terms" id="terms">
+  <label for="terms">
+    <i *ngIf="!terms" class="fa-regular fa-square-check"></i>
+    <i *ngIf="terms" class="fa-solid fa-square-check"></i>
+    Acepto los términos y condiciones</label>
+</form>
+<button>Regístrate</button>

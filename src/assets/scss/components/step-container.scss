@@ -1,0 +1,19 @@
+.step_container {
+  font-size: 14px;
+  dl {
+    display: flex;
+    gap: 4px;
+    margin: 0;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    dt {
+      text-transform: uppercase;
+      color: var(--text-200);
+    }
+    dd {
+      color: var(--text-200);
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+$padding-with-header: calc(var(--padding-sign-up) * 2.5);
+main {
+  display: inline-flex;
+  height: 100vh;
+  width: 100%;
+  app-landing {
+    flex: 0 50%;
+  }
+
+  ::ng-deep {
+    > router-outlet + * {
+      width: 100%;
+      flex: 1;
+      > section {
+        flex: 1;
+        position: relative;
+        padding: $padding-with-header var(--padding-sign-up)
+          var(--padding-sign-up);
+        max-height: 100vh;
+        overflow: auto;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: var(--primary-100);
+        article {
+          max-width: 70%;
+          width: 100%;
+          margin: 0 auto;
+          .card_container {
+            margin-top: 32px;
+          }
+        }
+      }
+    }
+  }
+}

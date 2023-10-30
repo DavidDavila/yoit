@@ -1,0 +1,22 @@
+@import "mixins/box-shadow";
+
+.google-button {
+  margin-top: 24px;
+  background-color: var(--bg-100);
+  @include box-shadow();
+  color: var(--primary-100);
+  display: inline-flex;
+  justify-content: center;
+  i {
+    font-size: 20px;
+  }
+
+  span {
+    font-weight: bold;
+    padding: 0 16px;
+  }
+  &:hover {
+    background-color: var(--primary-200);
+    color: var(--primary-300);
+  }
+}

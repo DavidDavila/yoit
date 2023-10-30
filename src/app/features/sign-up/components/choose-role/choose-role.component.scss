@@ -1,0 +1,11 @@
+@import "components/card-container";
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: var(--padding-sign-up);
+  text-align: right;
+  color: var(--primary-100);
+}

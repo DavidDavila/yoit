@@ -1,0 +1,33 @@
+<section>
+  <article>
+    <h2>Regístrate como estudiante</h2>
+    <p>Necesitamos una información mínima para configurar tu cuenta y que empieces a disfrutar de la experiencia.</p>
+    <div class="separator"></div>
+    <p>La edad no importa pero si define tus necesidades.<br>¿Qué tipo de estudiante eres?</p>
+    <ul class="card_container">
+      <li>
+        <a [routerLink]="[ 'adult']">
+          <span class="icon"><i class="fa-solid fa-user-graduate"></i></span>
+          <div>
+            <h3>Adulto</h3>
+          </div><span class="go">
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="[ 'tutor']">
+          <span class="icon"><i class="fa-solid fa-child"></i></span>
+          <div>
+            <h3>Menor de edad</h3>
+          </div>
+          <span class="go">
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+
+        </a>
+      </li>
+    </ul>
+  </article>
+</section>
