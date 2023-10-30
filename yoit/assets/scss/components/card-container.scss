@@ -1,0 +1,51 @@
+@import "mixins/box-shadow";
+.card_container {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  li {
+    a {
+      border-radius: 4px;
+      padding: 16px;
+      @include box-shadow();
+      display: inline-flex;
+      color: var(--primary-100);
+      justify-content: space-around;
+      gap: 16px;
+      font-size: 14px;
+      width: 100%;
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.icon {
+          color: var(--primary-100);
+          font-size: 28px;
+        }
+        &.go {
+          color: var(--bg-100);
+        }
+      }
+      div {
+        flex: 1;
+        text-align: left;
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    &:hover {
+      color: var(--bg-100);
+      a {
+        background-color: var(--primary-100);
+      }
+      a,
+      a h3,
+      a span.icon {
+        color: var(--bg-100);
+      }
+    }
+  }
+}
